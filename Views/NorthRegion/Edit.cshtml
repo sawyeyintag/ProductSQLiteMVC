@@ -1,0 +1,30 @@
+@model ProductSQLiteMVC.Models.ProductViewModel
+@{
+    ViewData["Title"] = "Edit Friend";
+}
+<h1>Edit</h1>
+<h4>@ViewData["Title"]</h4>
+<form method="post" class="w-75 mx-auto" class>
+    <div class="mb-3">
+        <label for="Id" class="form-label">Id:</label>
+        <input type="text" class="form-control" id="Id" asp-for="Id" readonly />
+    </div>
+    <div class="mb-3">
+        <label for="Name" class="form-label">Name:</label>
+        <input type="text" class="form-control" id="Name" asp-for="Name" />
+    </div>
+    <div class="mb-3">
+        <label for="Description" class="form-label">Description:</label>
+        <input type="text" class="form-control" id="Description" asp-for="Description" />
+    </div>
+    <div class="mb-3">
+        <label for="Price" class="form-label">Price:</label>
+        <input type="number" class="form-control" id="Price" asp-for="Price" />
+    </div>
+
+    <div class="mb-3">
+        <input type="submit" class="btn btn-info mx-auto d-inline" value="Save" />
+        <input type="button" class="btn btn-primary mx-auto d-inline" action="action"
+            onclick="window.location.href='../'" value="Cancel" />
+    </div>
+</form>
