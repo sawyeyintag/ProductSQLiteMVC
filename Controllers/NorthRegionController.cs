@@ -33,20 +33,20 @@ namespace ProductSQLiteMVC.Controllers
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> Create(NorthRegionViewModel addProductViewModel)
+        public async Task<IActionResult> Create(NorthRegionViewModel addNorthRegionViewModel)
         {
             try
             {
-                NorthRegionViewModel ProductViewModel = new NorthRegionViewModel()
+                NorthRegionViewModel NorthRegionViewModel = new NorthRegionViewModel()
                 {
-                    Id = addProductViewModel.Id,
-                    Name = addProductViewModel.Name,
-                    Description = addProductViewModel.Description,
-                    Price = addProductViewModel.Price,
+                    Id = addNorthRegionViewModel.Id,
+                    Name = addNorthRegionViewModel.Name,
+                    Description = addNorthRegionViewModel.Description,
+                    Price = addNorthRegionViewModel.Price,
                 };
-                await _context.AddAsync(ProductViewModel);
+                await _context.AddAsync(NorthRegionViewModel);
                 await _context.SaveChangesAsync();
-                TempData["successMessage"] = $"New Product was Created ({addProductViewModel.Name}.)";
+                TempData["successMessage"] = $"New Product was Created ({addNorthRegionViewModel.Name}.)";
                 return RedirectToAction(nameof(Index));
             }
             catch (Exception ex)
@@ -113,11 +113,11 @@ namespace ProductSQLiteMVC.Controllers
             }
         }
         [HttpPost]
-        public async Task<IActionResult> Delete(NorthRegionViewModel ProductViewModel)
+        public async Task<IActionResult> Delete(NorthRegionViewModel NorthRegionViewModel)
         {
             try
             {
-                var Product = await _context.Product.SingleOrDefaultAsync(f => f.Id == ProductViewModel.Id);
+                var Product = await _context.Product.SingleOrDefaultAsync(f => f.Id == NorthRegionViewModel.Id);
                 if (Product == null)
                 {
                     return View("No data");
@@ -126,7 +126,7 @@ namespace ProductSQLiteMVC.Controllers
                 {
                     _context.Product.Remove(Product);
                     await _context.SaveChangesAsync();
-                    TempData["successMessage"] = $"Product Record was Deleted ({ProductViewModel.Name}).";
+                    TempData["successMessage"] = $"Product Record was Deleted ({NorthRegionViewModel.Name}).";
                     return RedirectToAction(nameof(Index));
                 }
             }
