@@ -15,17 +15,17 @@
     </tr>
     @foreach (var product in Model)
     {
-            <tr>
-                <td>@Html.DisplayFor(model => product.Id)</td>
-                <td>@Html.DisplayFor(model => product.Name)</td>
-                <td>@Html.DisplayFor(model => product.Description)</td>
-                <td>@Html.DisplayFor(model => product.Price)</td>
-                <td>
-                    <a asp-controller="Product" asp-action="Edit" asp-route-id="@product.Id"
-                        class="btn btn-info text-white">Edit</a>
-                    <a asp-controller="Product" asp-action="Delete" asp-route-id="@product.Id"
-                        class="btn btn-danger text-white">Delete</a>
-                </td>
-            </tr>
+                <tr>
+                    <td>@Html.DisplayFor(model => product.Id)</td>
+                    <td>@Html.DisplayFor(model => product.Name)</td>
+                    <td>@Html.DisplayFor(model => product.Description)</td>
+                    <td>@Html.DisplayFor(model => product.Price)</td>
+                    <td>
+                        <a asp-controller="NorthRegion" asp-action="Edit" asp-route-id="@product.Id"
+                            class="btn btn-info text-white">Edit</a>
+                        <a asp-controller="NorthRegion" asp-action="Delete" asp-route-id="@product.Id"
+                            class="btn btn-danger text-white">Delete</a>
+                    </td>
+                </tr>
     }
 </table>
