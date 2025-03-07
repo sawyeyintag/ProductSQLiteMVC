@@ -1,5 +1,6 @@
 using ProductSQLiteMVC.Models;
 using Microsoft.EntityFrameworkCore;
+using ProductMVC.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 

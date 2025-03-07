@@ -1134,23 +1134,23 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\LICENSE.txt'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProductSQLiteMVC.h0pgc6yszp.bundle.scp.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProductSQLiteMVC.ukbr4mo68m.bundle.scp.css'))">
       <SourceType>Package</SourceType>
       <SourceId>ProductSQLiteMVC</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/ProductSQLiteMVC</BasePath>
-      <RelativePath>ProductSQLiteMVC.h0pgc6yszp.bundle.scp.css</RelativePath>
+      <RelativePath>ProductSQLiteMVC.ukbr4mo68m.bundle.scp.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>Reference</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>ScopedCss</AssetTraitName>
       <AssetTraitValue>ProjectBundle</AssetTraitValue>
-      <Fingerprint>h0pgc6yszp</Fingerprint>
-      <Integrity>oWZFg6w627l4QVghgrtfuXrwH9kdMPxQgqGDUr/oj6A=</Integrity>
+      <Fingerprint>ukbr4mo68m</Fingerprint>
+      <Integrity>Xg+DSxVpxS8I7JutGxjyVAdDBCeWBMUu8+ziX4+Lt6A=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProductSQLiteMVC.h0pgc6yszp.bundle.scp.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ProductSQLiteMVC.ukbr4mo68m.bundle.scp.css'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

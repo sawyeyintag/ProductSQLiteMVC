@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sawyeyintaung/Documents/Github/Personal/ProductSQLiteMVC/ProductSQLiteMVC.csproj": {}
+    "/Users/soewaiyanag/Code/C#/ProductSQLiteMVC/ProductSQLiteMVC.csproj": {}
   },
   "projects": {
-    "/Users/sawyeyintaung/Documents/Github/Personal/ProductSQLiteMVC/ProductSQLiteMVC.csproj": {
+    "/Users/soewaiyanag/Code/C#/ProductSQLiteMVC/ProductSQLiteMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sawyeyintaung/Documents/Github/Personal/ProductSQLiteMVC/ProductSQLiteMVC.csproj",
+        "projectUniqueName": "/Users/soewaiyanag/Code/C#/ProductSQLiteMVC/ProductSQLiteMVC.csproj",
         "projectName": "ProductSQLiteMVC",
-        "projectPath": "/Users/sawyeyintaung/Documents/Github/Personal/ProductSQLiteMVC/ProductSQLiteMVC.csproj",
-        "packagesPath": "/Users/sawyeyintaung/.nuget/packages/",
-        "outputPath": "/Users/sawyeyintaung/Documents/Github/Personal/ProductSQLiteMVC/obj/",
+        "projectPath": "/Users/soewaiyanag/Code/C#/ProductSQLiteMVC/ProductSQLiteMVC.csproj",
+        "packagesPath": "/Users/soewaiyanag/.nuget/packages/",
+        "outputPath": "/Users/soewaiyanag/Code/C#/ProductSQLiteMVC/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/sawyeyintaung/.nuget/NuGet/NuGet.Config"
+          "/Users/soewaiyanag/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -38,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -76,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

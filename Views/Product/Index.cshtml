@@ -1,0 +1,37 @@
+@model IEnumerable<ProductMVC.Models.ProductViewModel>
+@{
+    ViewData["Title"] = "List product";
+}
+<h1>Index</h1>
+<h4>@ViewData["Title"]</h4>
+<a asp-container="Product" asp-action="Create" class="btn btn-primary float-end my-2">Add Product</a>
+<table class="table">
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.Id)</th>
+        <th>@Html.DisplayNameFor(model => model.Name)</th>
+        <th>@Html.DisplayNameFor(model => model.Description)</th>
+        <th>@Html.DisplayNameFor(model => model.Price)</th>
+        <th>Expired Date</th>
+        <th>@Html.DisplayNameFor(model => model.ImageFilename)</th>
+        <th>@Html.DisplayNameFor(model => model.Source)</th>
+        <th>Actions</th>
+    </tr>
+    @foreach (var Product in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(model => Product.Id)</td>
+            <td>@Html.DisplayFor(model => Product.Name)</td>
+            <td>@Html.DisplayFor(model => Product.Description)</td>
+            <td>@Html.DisplayFor(model => Product.Price)</td>
+            <td>@Product.ExpiredDate.ToShortDateString()</td>
+            <td><img src="/images/@Product.ImageFilename" width="75" /></td>
+            <td>@Html.DisplayFor(model => Product.Source)</td>
+            <td>
+                <a asp-controller="Product" asp-action="Edit" asp-route-id="@Product.Id"
+                    class="btn btn-info text-white">Edit</a>
+                <a asp-controller="Product" asp-action="Delete" asp-route-id="@Product.Id"
+                    class="btn btn-danger text-white">Delete</a>
+            </td>
+        </tr>
+    }
+</table>
