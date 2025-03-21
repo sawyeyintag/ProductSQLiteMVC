@@ -1,0 +1,66 @@
+@model ProductMVC.Models.NorthRegionViewModel
+@{
+    ViewData["Title"] = "Edit Product";
+    var imageFilePath = TempData["ImageFilePath"]?.ToString();
+    if (imageFilePath == "/images/")
+    {
+        imageFilePath = "/images/NoData.jpg";
+    }
+    var source = TempData["Source"]?.ToString();
+    if (source == "" | source == null)
+    {
+        source = "Unknown";
+    }
+}
+<h1>Edit</h1>
+<h4>@ViewData["Title"]</h4>
+<form enctype="multipart/form-data" method="post" asp-controller="Product" asp-action="Edit" class="w-75 mx-auto">
+    <div class="mb-3">
+        <label for="Id" class="form-label">Id:</label>
+        <input type="text" class="form-control" id="Id" asp-for="Id" readonly />
+    </div>
+    <div class="mb-3">
+        <label for="Name" class="form-label">Name:</label>
+        <input type="text" class="form-control" id="Name" asp-for="Name" />
+    </div>
+    <div class="mb-3">
+        <label for="Description" class="form-label">Description:</label>
+        <input type="text" class="form-control" id="Description" asp-for="Description" />
+    </div>
+    <div class="mb-3">
+        <label for="Price" class="form-label">Price:</label>
+        <input type="text" class="form-control" id="Price" asp-for="Price" />
+    </div>
+    <div class="mb-3">
+        <label for="ExpiredDate" class="form-label">Expired Date:</label>
+        <input type="text" class="form-control" id="ExpiredDate" asp-for="ExpiredDate" readonly />
+    </div>
+    <div class="mb-3">
+        <label for="ImageFilename" class="form-label">Current Image Filename:</label>
+        <input type="text" class="form-control" id="ImageFilename" asp-for="ImageFilename" readonly />
+        <img src="@imageFilePath" width="120" />
+    </div>
+    <div class="mp-3">
+        <label for="Image" class="form-label">If you want to change Image, please upload again:</label>
+        <input type="file" class="form-control" name="ImageFile" id="ImageFilename" />
+    </div>
+    <div class="mb-3">
+        <label for="Source" class="form-label">Source: @source</label> <br />
+        <label>If data is incorrect, please select again form the menu:</label>
+        <div class="col-sm-9">
+            <select class="form-select" asp-for="Source" value="@source">
+                <option value="Domestic">Domestic</option>
+                <option value="Overseas">Overseas</option>
+                <option value="Unknown">Unknown</option>
+            </select>
+        </div>
+    </div>
+    <div class="mb-3">
+        <label>&nbsp;&nbsp;&nbsp;</label>
+        <div class="col-sm-9">
+            <input type="submit" class="btn btn-info mx-auto d-inline" value="Save" />
+            <input type="button" class="btn btn-primary mx-auto d-inline" value="Cancel" action="action"
+                onclick="window.location.href='../'" />
+        </div>
+    </div>
+</form>
