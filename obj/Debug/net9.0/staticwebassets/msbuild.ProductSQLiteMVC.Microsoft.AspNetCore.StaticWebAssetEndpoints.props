@@ -144,6 +144,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-KgOFLnm7AOCERYTe0/YjKzVq2vXt5BMLPki2BCTUFKU="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"205367"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022KgOFLnm7AOCERYTe0/YjKzVq2vXt5BMLPki2BCTUFKU=\u0022"},{"Name":"Last-Modified","Value":"Sun, 16 Mar 2025 14:05:00 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ProductSQLiteMVC/Images/2025036123806_Screenshot 2568-03-18 at 22.28.12.i53d20w0hv.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\2025036123806_Screenshot 2568-03-18 at 22.28.12.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"i53d20w0hv"},{"Name":"integrity","Value":"sha256-NpOb5rDu5FgKEOuhXFP4YlWH7DtMuwbyGRGuaYLnNNo="},{"Name":"label","Value":"_content/ProductSQLiteMVC/Images/2025036123806_Screenshot 2568-03-18 at 22.28.12.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"797836"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022NpOb5rDu5FgKEOuhXFP4YlWH7DtMuwbyGRGuaYLnNNo=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Mar 2025 05:38:06 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ProductSQLiteMVC/Images/2025036123806_Screenshot 2568-03-18 at 22.28.12.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\2025036123806_Screenshot 2568-03-18 at 22.28.12.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-NpOb5rDu5FgKEOuhXFP4YlWH7DtMuwbyGRGuaYLnNNo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"797836"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022NpOb5rDu5FgKEOuhXFP4YlWH7DtMuwbyGRGuaYLnNNo=\u0022"},{"Name":"Last-Modified","Value":"Sat, 22 Mar 2025 05:38:06 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ProductSQLiteMVC/Images/2025037230307_kite.8f8hoa6m4h.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\2025037230307_kite.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

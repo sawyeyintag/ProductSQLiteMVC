@@ -24,12 +24,24 @@ namespace ProductMVC.Controllers
             this.environment = environment;
         }
 
-        // Get:centralAreaController
+        // GET: CentralArea
         [HttpGet]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page = 1, int pageSize = 5)
         {
-            var productList = await _context.CentralArea.ToListAsync();
-            productList = productList.OrderByDescending(x => x.Id).ToList();
+            var query = _context.CentralArea
+                .OrderByDescending(x => x.Id) // Sort in database
+                .AsQueryable();
+
+            // Get total count before applying pagination
+            int totalRecords = await query.CountAsync();
+
+            // Apply pagination
+            var productList = await query
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+
+            // Ensure all products have a valid image filename
             foreach (var product in productList)
             {
                 if (string.IsNullOrEmpty(product.PictureFileName))
@@ -37,7 +49,11 @@ namespace ProductMVC.Controllers
                     product.PictureFileName = "NoData.jpg";
                 }
             }
-            return View(productList);
+
+            // Create a paginated list
+            var paginatedList = new PagedList<CentralAreaViewModel>(productList, page, pageSize, totalRecords);
+
+            return View(paginatedList);
         }
 
         // GET:centralAreaController/Create
