@@ -1,0 +1,43 @@
+@model IEnumerable<ProductMVC.Models.CentralAreaViewModel>
+@{
+    ViewData["Title"] = "List product";
+}
+<h1>Central Area</h1>
+<h4>@ViewData["Title"]</h4>
+<a asp-container="CentralArea" asp-action="Create" class="btn btn-primary float-end my-2">Add Product</a>
+<table class="table">
+    <tr>
+        <th>@Html.DisplayNameFor(model => model.Id)</th>
+        <th>@Html.DisplayNameFor(model => model.Name)</th>
+        <th>@Html.DisplayNameFor(model => model.Description)</th>
+        <th>@Html.DisplayNameFor(model => model.BuyingPrice)</th>
+        <th>@Html.DisplayNameFor(model => model.Supplier)</th>
+        <th>Manufacturing Date</th>
+        <th>Purchasing Date</th>
+        <th>Expiration Date</th>
+        <th>@Html.DisplayNameFor(model => model.PictureFileName)</th>
+        <th>@Html.DisplayNameFor(model => model.PictureFileName)</th>
+        <th>Actions</th>
+    </tr>
+    @foreach (var Product in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(model => Product.Id)</td>
+            <td>@Html.DisplayFor(model => Product.Name)</td>
+            <td>@Html.DisplayFor(model => Product.Description)</td>
+            <td>@Html.DisplayFor(model => Product.BuyingPrice)</td>
+            <td>@Html.DisplayFor(model => Product.Supplier)</td>
+            <td>@Product.ManufacturingDate.ToShortDateString()</td>
+            <td>@Product.PurchasingDate.ToShortDateString()</td>
+            <td>@Product.ExpirationDate.ToShortDateString()</td>
+            <td><img src="/images/@Product.PictureFileName" width="75" /></td>
+            <td>@Html.DisplayFor(model => Product.PictureFileName)</td>
+            <td>
+                <a asp-controller="CentralArea" asp-action="Edit" asp-route-id="@Product.Id"
+                    class="btn btn-info text-white">Edit</a>
+                <a asp-controller="CentralArea" asp-action="Delete" asp-route-id="@Product.Id"
+                    class="btn btn-danger text-white">Delete</a>
+            </td>
+        </tr>
+    }
+</table>

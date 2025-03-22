@@ -1,0 +1,59 @@
+@model ProductMVC.Models.CentralAreaViewModel
+@{
+    ViewData["Title"] = "Delete Central Area Product";
+    var imageFilePath = TempData["ImageFilePath"]?.ToString();
+    if (imageFilePath == "/images/")
+    {
+        imageFilePath = "/images/NoData.jpg";
+    }
+    var source = TempData["Source"]?.ToString();
+    if (source == "" | source == null)
+    {
+        source = "Unknown";
+    }
+}
+<h1>Delete</h1>
+<h4>@ViewData["Title"]</h4>
+<h5>You are going to Delete this record ... If you are sure, just press "Delete" button</h5>
+<form method="post" class="w-75 mx-auto">
+    <div class="mb-3">
+        <label for="Name" class="form-label">Please enter Name:</label>
+        <input type="t ext" class="form-control" id="Name" asp-for="Name" />
+    </div>
+    <div class="mb-3">
+        <label for="Description" class="form-label">Please enter Description:</label>
+        <input type="text" class="form-control" id="Description" asp-for="Description" />
+    </div>
+    <div class="mb-3">
+        <label for="Price" class="form-label">Please enter Buying Price:</label>
+        <input type="number" class="form-control" id="Price" asp-for="BuyingPrice" />
+    </div>
+    <div class="mb-3">
+        <label for="Price" class="form-label">Please enter Supplier:</label>
+        <input type="text" class="form-control" id="Price" asp-for="Supplier" />
+    </div>
+    <div class="mb-3">
+        <label for="ExpiredDate" class="form-label">Manufacturing Date:</label>
+        <input type="date" class="form-control" id="ExpiredDate" asp-for="ManufacturingDate" readonly />
+    </div>
+    <div class="mb-3">
+        <label for="ExpiredDate" class="form-label">Purchasing Date:</label>
+        <input type="date" class="form-control" id="ExpiredDate" asp-for="PurchasingDate" readonly />
+    </div>
+    <div class="mb-3">
+        <label for="ExpiredDate" class="form-label">Expiration Date:</label>
+        <input type="date" class="form-control" id="ExpiredDate" asp-for="ExpirationDate" readonly />
+    </div>
+    <div class="mp-3">
+        <label for="Image" class="form-label">Please enter Image:</label>
+        <input type="file" class="form-control" name="ImageFile" id="ImageFilename" />
+    </div>
+    <div class="mb-3">
+        <label>&nbsp;&nbsp;&nbsp;</label>
+        <div class="col-sm-9">
+            <input type="submit" class="btn btn-danger mx-auto d-inline" value="Delete" />
+            <input type="button" class="btn btn-info mx-auto d-inline" value="Cancel" action="action"
+                onclick="window.location.href='../'" />
+        </div>
+    </div>
+</form>

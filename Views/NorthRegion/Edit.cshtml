@@ -1,6 +1,6 @@
 @model ProductMVC.Models.NorthRegionViewModel
 @{
-    ViewData["Title"] = "Edit Product";
+    ViewData["Title"] = "Edit North Region Product";
     var imageFilePath = TempData["ImageFilePath"]?.ToString();
     if (imageFilePath == "/images/")
     {
@@ -14,7 +14,7 @@
 }
 <h1>Edit</h1>
 <h4>@ViewData["Title"]</h4>
-<form enctype="multipart/form-data" method="post" asp-controller="Product" asp-action="Edit" class="w-75 mx-auto">
+<form enctype="multipart/form-data" method="post" asp-controller="NorthRegion" asp-action="Edit" class="w-75 mx-auto">
     <div class="mb-3">
         <label for="Id" class="form-label">Id:</label>
         <input type="text" class="form-control" id="Id" asp-for="Id" readonly />
@@ -33,7 +33,7 @@
     </div>
     <div class="mb-3">
         <label for="ExpiredDate" class="form-label">Expired Date:</label>
-        <input type="text" class="form-control" id="ExpiredDate" asp-for="ExpiredDate" readonly />
+        <input type="date" class="form-control" id="ExpiredDate" asp-for="ExpiredDate" readonly />
     </div>
     <div class="mb-3">
         <label for="ImageFilename" class="form-label">Current Image Filename:</label>

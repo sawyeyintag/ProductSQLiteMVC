@@ -9,6 +9,7 @@ namespace ProductMVC.Models
     public class ProductDbContext : DbContext
     {
         public ProductDbContext(DbContextOptions<ProductDbContext> options) : base(options) { }
-        public DbSet<ProductViewModel> NorthRegion { get; set; }
+        public DbSet<NorthRegionViewModel> NorthRegion { get; set; }
+        public DbSet<CentralAreaViewModel> CentralArea { get; set; }
     }
 }

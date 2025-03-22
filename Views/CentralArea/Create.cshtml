@@ -1,10 +1,10 @@
-@model ProductMVC.Models.NorthRegionViewModel
+@model ProductMVC.Models.CentralAreaViewModel
 @{
-    ViewData["Title"] = "Add North Region Product";
+    ViewData["Title"] = "Add Central Area Product";
 }
 <h1>Create</h1>
 <h4>@ViewData["Title"]</h4>
-<form enctype="multipart/form-data" method="post" asp-controller="NorthRegion" asp-action="Create" class="w-75 mx-auto">
+<form enctype="multipart/form-data" method="post" asp-controller="CentralArea" asp-action="Create" class="w-75 mx-auto">
     <div class="mb-3">
         <label for="Name" class="form-label">Please enter Name:</label>
         <input type="t ext" class="form-control" id="Name" asp-for="Name" />
@@ -14,27 +14,39 @@
         <input type="text" class="form-control" id="Description" asp-for="Description" />
     </div>
     <div class="mb-3">
-        <label for="Price" class="form-label">Please enter Price:</label>
-        <input type="text" class="form-control" id="Price" asp-for="Price" />
+        <label for="Price" class="form-label">Please enter Buying Price:</label>
+        <input type="number" class="form-control" id="Price" asp-for="BuyingPrice" />
     </div>
     <div class="mb-3">
-        <label for="ExpiredDate" class="form-label">Expired Date:</label>
-        <input type="date" class="form-control" id="ExpiredDate" asp-for="ExpiredDate" readonly />
+        <label for="Price" class="form-label">Please enter Supplier:</label>
+        <input type="text" class="form-control" id="Price" asp-for="Supplier" />
+    </div>
+    <div class="mb-3">
+        <label for="ExpiredDate" class="form-label">Manufacturing Date:</label>
+        <input type="date" class="form-control" id="ExpiredDate" asp-for="ManufacturingDate" readonly />
+    </div>
+    <div class="mb-3">
+        <label for="ExpiredDate" class="form-label">Purchasing Date:</label>
+        <input type="date" class="form-control" id="ExpiredDate" asp-for="PurchasingDate" readonly />
+    </div>
+    <div class="mb-3">
+        <label for="ExpiredDate" class="form-label">Expiration Date:</label>
+        <input type="date" class="form-control" id="ExpiredDate" asp-for="ExpirationDate" readonly />
     </div>
     <div class="mp-3">
         <label for="Image" class="form-label">Please enter Image:</label>
         <input type="file" class="form-control" name="ImageFile" id="ImageFilename" />
     </div>
-    <div class="mb-3">
+    @* <div class="mb-3">
         <label for="Source" class="form-label">Please enter Source:</label>
         <div class="col-sm-9">
-            <select class="form-select" asp-for="Source">
+            <select class="form-select" asp-for="PictureFileName">
                 <option value="Domestic">Domestic</option>
                 <option value="Overseas">Overseas</option>
                 <option value="Unknown">Unknown</option>
             </select>
         </div>
-    </div>
+    </div> *@
     <div class="mb-3">
         <label>&nbsp;&nbsp;&nbsp;</label>
         <div class="col-sm-9">

@@ -15,11 +15,11 @@ namespace ProductMVC.Models
         public string Description { get; set; } = "";
         public float BuyingPrice { get; set; } = 0;
         public string Supplier { get; set; } = "";
-        public string PictureFileName { get; set; } = "";
-        [Column("PictureFileName")]
-        [DisplayName("Image")]
-        public string ManufacturingDate { get; set; } = "";
-        public string PurchasingDate { get; set; } = "";
-        public string ExpirationDate { get; set; } = "";
+        public string? PictureFileName { get; set; }
+        // [Column("PictureFileName")]
+        // [DisplayName("Image")
+        public DateTime ManufacturingDate { get; set; } = DateTime.Now.AddDays(1);
+        public DateTime PurchasingDate { get; set; } = DateTime.Now.AddDays(30);
+        public DateTime ExpirationDate { get; set; } = DateTime.Now.AddDays(90);
     }
 }

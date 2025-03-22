@@ -3142,19 +3142,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/soewaiyanag/.nuget/packages/": {}
+    "/Users/sawyeyintaung/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/soewaiyanag/Code/C#/ProductSQLiteMVC/ProductSQLiteMVC.csproj",
+      "projectUniqueName": "/Users/sawyeyintaung/Documents/Github/Personal/ProductSQLiteMVC/ProductSQLiteMVC.csproj",
       "projectName": "ProductSQLiteMVC",
-      "projectPath": "/Users/soewaiyanag/Code/C#/ProductSQLiteMVC/ProductSQLiteMVC.csproj",
-      "packagesPath": "/Users/soewaiyanag/.nuget/packages/",
-      "outputPath": "/Users/soewaiyanag/Code/C#/ProductSQLiteMVC/obj/",
+      "projectPath": "/Users/sawyeyintaung/Documents/Github/Personal/ProductSQLiteMVC/ProductSQLiteMVC.csproj",
+      "packagesPath": "/Users/sawyeyintaung/.nuget/packages/",
+      "outputPath": "/Users/sawyeyintaung/Documents/Github/Personal/ProductSQLiteMVC/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/soewaiyanag/.nuget/NuGet/NuGet.Config"
+        "/Users/sawyeyintaung/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -3178,7 +3178,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net9.0": {
@@ -3216,7 +3216,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

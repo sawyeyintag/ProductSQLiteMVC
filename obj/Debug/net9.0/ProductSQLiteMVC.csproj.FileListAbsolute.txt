@@ -202,8 +202,6 @@
 /Users/sawyeyintaung/Documents/Github/Personal/ProductSQLiteMVC/obj/Debug/net9.0/compressed/rn5oip7z4i-muycvpuwrr.gz
 /Users/sawyeyintaung/Documents/Github/Personal/ProductSQLiteMVC/obj/Debug/net9.0/compressed/jpopm5nl8i-87fc7y1x7t.gz
 /Users/sawyeyintaung/Documents/Github/Personal/ProductSQLiteMVC/obj/Debug/net9.0/compressed/l7rb8na87h-mlv21k5csn.gz
-/Users/sawyeyintaung/Documents/Github/Personal/ProductSQLiteMVC/obj/Debug/net9.0/compressed/7m4143b73z-h0pgc6yszp.gz
-/Users/sawyeyintaung/Documents/Github/Personal/ProductSQLiteMVC/obj/Debug/net9.0/compressed/0z8qvxs911-h0pgc6yszp.gz
 /Users/sawyeyintaung/Documents/Github/Personal/ProductSQLiteMVC/obj/Debug/net9.0/staticwebassets.build.json
 /Users/sawyeyintaung/Documents/Github/Personal/ProductSQLiteMVC/obj/Debug/net9.0/staticwebassets.development.json
 /Users/sawyeyintaung/Documents/Github/Personal/ProductSQLiteMVC/obj/Debug/net9.0/staticwebassets.build.endpoints.json
@@ -431,3 +429,6 @@
 /Users/soewaiyanag/Code/C#/ProductSQLiteMVC/obj/Debug/net9.0/ref/ProductSQLiteMVC.dll
 /Users/soewaiyanag/Code/C#/ProductSQLiteMVC/obj/Debug/net9.0/compressed/7m4143b73z-ukbr4mo68m.gz
 /Users/soewaiyanag/Code/C#/ProductSQLiteMVC/obj/Debug/net9.0/compressed/0z8qvxs911-ukbr4mo68m.gz
+/Users/sawyeyintaung/Documents/Github/Personal/ProductSQLiteMVC/obj/Debug/net9.0/ProductSQLiteMVC.sourcelink.json
+/Users/sawyeyintaung/Documents/Github/Personal/ProductSQLiteMVC/obj/Debug/net9.0/compressed/7m4143b73z-ukbr4mo68m.gz
+/Users/sawyeyintaung/Documents/Github/Personal/ProductSQLiteMVC/obj/Debug/net9.0/compressed/0z8qvxs911-ukbr4mo68m.gz
