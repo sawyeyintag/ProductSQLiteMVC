@@ -12,13 +12,13 @@ using Microsoft.Extensions.Logging;
 namespace ProductMVC.Controllers
 {
     //[Route("[controller]")]
-    [Route("[controller]/{action=Index}/{Id=0}")]
-    public class northRegionController : Controller
+    // [Route("[controller]/{action=Index}/{Id=0}")]
+    public class NorthRegionController : Controller
     {
         private readonly ProductDbContext _context;
         private readonly IWebHostEnvironment environment;
 
-        public northRegionController(ProductDbContext ProductDbContext, IWebHostEnvironment environment)
+        public NorthRegionController(ProductDbContext ProductDbContext, IWebHostEnvironment environment)
         {
             this._context = ProductDbContext;
             this.environment = environment;
@@ -26,7 +26,7 @@ namespace ProductMVC.Controllers
 
         // GET: NorthRegion
         [HttpGet]
-        public async Task<IActionResult> Index(int page = 1, int pageSize = 5)
+        public async Task<IActionResult> Index(int page = 1, int pageSize = 2)
         {
             var query = _context.NorthRegion
                 .OrderByDescending(x => x.Id) // Sort in database

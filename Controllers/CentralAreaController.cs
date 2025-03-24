@@ -13,12 +13,12 @@ namespace ProductMVC.Controllers
 {
     //[Route("[controller]")]
     [Route("[controller]/{action=Index}/{Id=0}")]
-    public class centralAreaController : Controller
+    public class CentralAreaController : Controller
     {
         private readonly ProductDbContext _context;
         private readonly IWebHostEnvironment environment;
 
-        public centralAreaController(ProductDbContext ProductDbContext, IWebHostEnvironment environment)
+        public CentralAreaController(ProductDbContext ProductDbContext, IWebHostEnvironment environment)
         {
             this._context = ProductDbContext;
             this.environment = environment;
@@ -26,7 +26,7 @@ namespace ProductMVC.Controllers
 
         // GET: CentralArea
         [HttpGet]
-        public async Task<IActionResult> Index(int page = 1, int pageSize = 5)
+        public async Task<IActionResult> Index(int page = 1, int pageSize = 2)
         {
             var query = _context.CentralArea
                 .OrderByDescending(x => x.Id) // Sort in database
